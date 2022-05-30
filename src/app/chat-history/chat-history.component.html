@@ -1,0 +1,23 @@
+<p class="chatWindow">Chat Window</p>
+<div class="box">
+  <mat-list class="mat-list">
+    <mat-list-item
+      *ngFor="let person of sentMessages"
+      class="mat-list-item-word-wrap"
+    >
+      <div class="line-wrapper">
+        <mat-icon class="bookmark">bookmark</mat-icon>
+        <div class="text-wrapper">
+          <div mat-line class="mat-line-person">Person {{ person.id }}</div>
+          <div mat-line class="mat-line-message">
+            {{ person.message }}
+          </div>
+          <mat-divider></mat-divider>
+        </div>
+      </div>
+    </mat-list-item>
+  </mat-list>
+  <button mat-button class="button" (click)="onClearChat()">
+    <mat-icon>close</mat-icon> CLEAR CHAT WINDOW
+  </button>
+</div>

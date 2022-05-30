@@ -1,0 +1,23 @@
+<div class="container">
+  <mat-form-field appearance="outline" floatLabel="always">
+    <mat-label>Person {{ this.index }}</mat-label>
+    <textarea
+      matInput
+      placeholder="Enter your message here..."
+      rows="8"
+      [(ngModel)]="message"
+    ></textarea>
+  </mat-form-field>
+
+  <div class="padding">
+    <button
+      mat-button
+      [disabled]="!message"
+      class="button"
+      (click)="onSentMessage()"
+    >
+      <mat-icon>keyboard_arrow_right</mat-icon>
+      SEND
+    </button>
+  </div>
+</div>

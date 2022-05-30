@@ -1,0 +1,20 @@
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 330px !important;
+}
+
+.padding {
+  padding-right: 30px;
+  padding-bottom: 10px;
+  align-self: end;
+}
+
+.button {
+  color: black !important;
+  background-color: #03dac5;
+  border-radius: 15px;
+  height: 40px;
+  width: 90px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
